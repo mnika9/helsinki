@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helsinki feladat</title>
+</head>
+<body>
+    
+<table>
+      <thead>
+         <tr>
+             <th>Eredmény</th>
+             <th>Helyezések</th>
+             <th>Sportág</th>
+             <th>Versenyszám</th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let eredmenyek of eredmenyMegjelenites ">
+            <td>{{eredmenyek.helyezes}}</td>
+            <td>{{eredmenyek.csapatMeret}}</td>
+            <td>{{eredmenyek.sportag}}</td>
+            <td>{{eredmenyek.versenySzam}}</td>
+        </tr>
+      </tbody>
+</table>
+</body>
+</html>
+
